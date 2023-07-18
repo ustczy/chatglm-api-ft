@@ -10,7 +10,7 @@ DEVICE_ID = "0"
 CUDA_DEVICE = f"{DEVICE}:{DEVICE_ID}" if DEVICE_ID else DEVICE
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-chatglm_model_path = os.path.join(current_dir, "../../chatglm-6b")
+chatglm_model_path = os.path.join(current_dir, "THUDM/chatglm-6b")
 fine_tuning_model_path = os.path.join(current_dir, "../weights/api-fn")
 
 def torch_gc():

@@ -5,7 +5,7 @@ from peft import PeftModel
 import os
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-chatglm_model_path = os.path.join(current_dir, "../../chatglm-6b")
+chatglm_model_path = os.path.join(current_dir, "THUDM/chatglm-6b")
 fine_tuning_model_path = os.path.join(current_dir, "../weights/api-fn")
 
 tokenizer = AutoTokenizer.from_pretrained(chatglm_model_path, trust_remote_code=True)
